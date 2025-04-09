@@ -1,0 +1,30 @@
+# Node modules
+node_modules/
+sms-frontend/node_modules/
+sms-backend/node_modules/
+# Environment variables
+.env
+.env.local
+
+# Build files
+build/
+dist/
+.cache/
+.next/
+.turbo/
+*.log
+
+# Git metadata
+.git/
+FETCH_HEAD
+HEAD
+COMMIT_EDITMSG
+
+# IDE settings (optional)
+.vscode/
+.idea/
+
+# Generated files
+*.map
+*.bak
+*.swp

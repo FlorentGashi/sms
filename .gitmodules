@@ -1,0 +1,3 @@
+[submodule "sms-frontend"]
+    path = sms-frontend
+    url = https://github.com/FlorentGashi/SMS.git
