@@ -29,7 +29,7 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container flex h-16 items-center justify-between py-4">
+        <div className="w-full flex items-center justify-between px-4 h-16">
           <div className="flex items-center gap-2">
             <School className="h-6 w-6 text-primary" />
             <span className="text-xl font-bold">SMS</span>
