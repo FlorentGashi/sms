@@ -123,26 +123,26 @@ export default function Home() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 items-center md:py-24 lg:py-32 bg-muted">
-          <div className="container px-4 md:px-6">
+        <section className="w-full flex py-12 items-center md:py-24 justify-center lg:py-32 bg-muted">
+          <div className="container px-6 md:px-8 xl:px-14">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
-              <div className="space-y-4">
+            <div className="space-y-6">
                 {/* <Badge className="mb-2">Example New Version or smth...</Badge> */}
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
+                <h1 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter">
                   Streamline Your School Management
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
+                <p className="max-w-[600px] text-sm sm:text-base md:text-xl text-muted-foreground">
                   Our comprehensive School Management System helps you manage students, teachers, courses, and
                   communicate effectively with SMS notifications.
                 </p>
-                <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <div className="flex flex-col gap-3 min-[400px]:flex-row">
                   <Link href="#">
-                    <Button size="lg" className="gap-1">
+                    <Button size="lg" className="gap-1 w-full min-[400px]:w-auto">
                       Get Started <ArrowRight className="h-4 w-4" />
                     </Button>
                   </Link>
                   <Link href="#">
-                    <Button size="lg" variant="outline">
+                    <Button size="lg" variant="outline" className="w-full min-[400px]:w-auto">
                       View Demo
                     </Button>
                   </Link>
@@ -152,10 +152,10 @@ export default function Home() {
                 <div className="relative">
                   <div className="absolute -top-4 -left-4 h-72 w-72 bg-primary/10 rounded-full blur-3xl"></div>
                   <img
-                    src="/placeholder.svg?height=550&width=750"
+                    src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?height=550&width=750"
                     alt="School Management Dashboard"
-                    className="relative rounded-lg shadow-xl object-cover border"
-                    width={550}
+                    className="relative rounded-lg shadow-xl object-cover border w-full"
+                    width={650}
                     height={400}
                   />
                 </div>
@@ -165,8 +165,8 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
+        <section className="w-full flex py-12 items-center md:py-24 justify-center lg:py-32">
+          <div className="container px-6 md:px-8 xl:px-14">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-start">
               <div className="space-y-4">
                 <div>
@@ -301,7 +301,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t py-6 md:py-0">
+      <footer className="border-t py-6 md:py-0 justify-center flex">
         <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
           <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
             © 2025 SMS. All rights reserved.
