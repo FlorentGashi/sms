@@ -19,6 +19,12 @@ import {
   MapPin,
   Menu,
   X,
+  Users,
+  BookOpen,
+  Calendar,
+  Bell,
+  BarChart,
+  ChevronRight,
 } from "lucide-react"
 import { useState } from "react"
 
@@ -160,6 +166,135 @@ export default function Home() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Sponsors/Partners Section */}
+        <section className="w-full flex py-12 items-center justify-center">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-xl font-medium tracking-tight">Trusted by leading educational institutions</h2>
+              </div>
+              <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16 grayscale opacity-90">
+                <div className="flex items-center justify-center">
+                  <img src="https://www.kekamed.com/eduford_img/kekafinal.png" alt="Sponsor 1" className="h-8 md:h-10" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="https://www.kekamed.com/eduford_img/euroschool-removebg-preview.png" alt="Sponsor 2" className="h-8 md:h-10" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="https://www.kekamed.com/eduford_img/Ubtlogo.png" alt="Sponsor 3" className="h-8 md:h-10" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="https://www.kekamed.com/eduford_img/euroschool-removebg-preview.png" alt="Sponsor 4" className="h-8 md:h-10" />
+                </div>
+                <div className="flex items-center justify-center">
+                  <img src="https://www.kekamed.com/eduford_img/kekafinal.png" alt="Sponsor 5" className="h-8 md:h-10" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Features Section */}
+        <section className="w-full flex py-12 items-center md:py-24 justify-center">
+          <div className="container px-6 md:px-8 xl:px-14">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Key Features</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Everything you need to manage your educational institution efficiently
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-2 text-center">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      <Users className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Student Management</h3>
+                    <p className="text-muted-foreground">
+                      Manage student profiles, attendance, grades, and performance tracking.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-2 text-center">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      <BookOpen className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Course Management</h3>
+                    <p className="text-muted-foreground">
+                      Create and manage courses, assign teachers, and track curriculum progress.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-2 text-center">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      <Calendar className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Attendance Tracking</h3>
+                    <p className="text-muted-foreground">
+                      Track student and teacher attendance with detailed reports and analytics.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-2 text-center">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      <Bell className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">SMS Notifications</h3>
+                    <p className="text-muted-foreground">
+                      Send automated SMS alerts for attendance, events, and important announcements.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-2 text-center">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      <BarChart className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Performance Analytics</h3>
+                    <p className="text-muted-foreground">
+                      Generate detailed reports on student performance, attendance, and other metrics.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col items-center space-y-2 text-center">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10">
+                      <School className="h-6 w-6 text-primary" />
+                    </div>
+                    <h3 className="text-xl font-bold">Fee Management</h3>
+                    <p className="text-muted-foreground">
+                      Manage student fees, generate invoices, and track payment history.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            <div className="flex justify-center mt-8">
+              <Link href="/features">
+                <Button variant="outline" className="gap-1">
+                  View All Features <ChevronRight className="h-4 w-4" />
+                </Button>
+              </Link>
             </div>
           </div>
         </section>
