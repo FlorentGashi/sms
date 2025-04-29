@@ -25,6 +25,9 @@ import {
   Bell,
   BarChart,
   ChevronRight,
+  CheckCircle,
+  Star,
+  Download,
 } from "lucide-react"
 import { useState } from "react"
 
@@ -295,6 +298,339 @@ export default function Home() {
                   View All Features <ChevronRight className="h-4 w-4" />
                 </Button>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* About Section */}
+        <section className="w-full flex py-12 items-center md:py-24 justify-center">
+          <div className="container px-4 md:px-6">
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="flex justify-center">
+                <div className="relative">
+                  <div className="absolute -top-4 -right-4 h-72 w-72 bg-primary/10 rounded-full blur-3xl"></div>
+                  <img
+                    src="https://www.kekamed.com/eduford_img/homekeka.jpg"
+                    alt="About SchoolMS"
+                    className="relative rounded-lg shadow-xl object-cover border"
+                    width={500}
+                    height={500}
+                  />
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div>
+                  <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About SchoolMS</h2>
+                  <p className="mt-4 text-muted-foreground md:text-xl">
+                    We're on a mission to transform educational management through innovative technology.
+                  </p>
+                </div>
+                <div className="space-y-4">
+                  <div className="flex gap-2">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold">Our Mission</h3>
+                      <p className="text-muted-foreground">
+                        To provide educational institutions with powerful, user-friendly tools that streamline
+                        administrative tasks and enhance communication.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold">Our Vision</h3>
+                      <p className="text-muted-foreground">
+                        To be the leading provider of school management solutions, empowering educational institutions
+                        worldwide.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex gap-2">
+                    <CheckCircle className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-bold">Our Values</h3>
+                      <p className="text-muted-foreground">
+                        Innovation, reliability, security, and exceptional customer support are at the core of
+                        everything we do.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 min-[400px]:flex-row pt-4">
+                  <Link href="/about">
+                    <Button variant="outline" className="gap-1">
+                      Learn More About Us <ChevronRight className="h-4 w-4" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Testimonials Section */}
+        <section className="w-full flex py-12 items-center md:py-24 justify-center">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What Our Clients Say</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Trusted by educational institutions around the world
+                </p>
+              </div>
+            </div>
+            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 mt-8">
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex text-yellow-400 mb-2">
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                    </div>
+                    <p className="text-muted-foreground italic">
+                      "SchoolMS has revolutionized how we manage our school. The SMS notification feature has
+                      significantly improved our communication with parents."
+                    </p>
+                    <div className="flex items-center pt-4">
+                      <img
+                        src="https://www.citypng.com/public/uploads/preview/white-user-member-guest-icon-png-image-701751695037005zdurfaim0y.png"
+                        alt="Principal"
+                        className="h-10 w-10 rounded-full mr-2"
+                      />
+                      <div>
+                        <p className="font-medium">Hajdin Gashi</p>
+                        <p className="text-sm text-muted-foreground">Principal, KEKA-MED</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex text-yellow-400 mb-2">
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                    </div>
+                    <p className="text-muted-foreground italic">
+                      "The attendance tracking and fee management features have saved our administrative staff countless
+                      hours. Highly recommended!"
+                    </p>
+                    <div className="flex items-center pt-4">
+                      <img
+                        src="https://www.citypng.com/public/uploads/preview/white-user-member-guest-icon-png-image-701751695037005zdurfaim0y.png"
+                        alt="Administrator"
+                        className="h-10 w-10 rounded-full mr-2"
+                      />
+                      <div>
+                        <p className="font-medium">Erlis Buqani</p>
+                        <p className="text-sm text-muted-foreground">Administrator, UBT</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              <Card className="bg-background hover:shadow-lg transition-shadow">
+                <CardContent className="p-6">
+                  <div className="flex flex-col space-y-2">
+                    <div className="flex text-yellow-400 mb-2">
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                      <Star className="h-5 w-5 fill-current" />
+                    </div>
+                    <p className="text-muted-foreground italic">
+                      "As a teacher, I love how easy it is to track student performance and communicate with parents.
+                      The interface is intuitive and user-friendly."
+                    </p>
+                    <div className="flex items-center pt-4">
+                      <img
+                        src="https://www.citypng.com/public/uploads/preview/white-user-member-guest-icon-png-image-701751695037005zdurfaim0y.png"
+                        alt="Teacher"
+                        className="h-10 w-10 rounded-full mr-2"
+                      />
+                      <div>
+                        <p className="font-medium">Bedri Gashi</p>
+                        <p className="text-sm text-muted-foreground">Teacher, Kajtaz Ramadani</p>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Resources Section */}
+        <section className="w-full flex py-12 items-center md:py-24 justify-center bg-muted">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Resources & Downloads</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Access guides, tutorials, and resources to help you get the most out of SchoolMS
+                </p>
+              </div>
+            </div>
+
+            <Tabs defaultValue="guides" className="w-full max-w-4xl mx-auto mt-8">
+              <TabsList className="grid w-full grid-cols-3">
+                <TabsTrigger value="guides">Guides & Tutorials</TabsTrigger>
+                <TabsTrigger value="ebooks">E-Books</TabsTrigger>
+                <TabsTrigger value="templates">Templates</TabsTrigger>
+              </TabsList>
+              <TabsContent value="guides" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <Card className="bg-background hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col space-y-2">
+                        <h3 className="text-xl font-bold">Getting Started with SchoolMS</h3>
+                        <p className="text-muted-foreground">
+                          A comprehensive guide to setting up and configuring your SchoolMS system.
+                        </p>
+                        <div className="pt-4">
+                          <Button variant="outline" className="gap-1">
+                            <Download className="h-4 w-4" /> Download PDF
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-background hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col space-y-2">
+                        <h3 className="text-xl font-bold">Administrator's Handbook</h3>
+                        <p className="text-muted-foreground">
+                          Learn how to manage users, permissions, and system settings effectively.
+                        </p>
+                        <div className="pt-4">
+                          <Button variant="outline" className="gap-1">
+                            <Download className="h-4 w-4" /> Download PDF
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </TabsContent>
+              <TabsContent value="ebooks" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <Card className="bg-background hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col space-y-2">
+                        <h3 className="text-xl font-bold">Digital Transformation in Education</h3>
+                        <p className="text-muted-foreground">
+                          Explore how technology is reshaping educational institutions worldwide.
+                        </p>
+                        <div className="pt-4">
+                          <Button variant="outline" className="gap-1">
+                            <Download className="h-4 w-4" /> Download E-Book
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-background hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col space-y-2">
+                        <h3 className="text-xl font-bold">Effective School Communication</h3>
+                        <p className="text-muted-foreground">
+                          Best practices for improving communication between schools, students, and parents.
+                        </p>
+                        <div className="pt-4">
+                          <Button variant="outline" className="gap-1">
+                            <Download className="h-4 w-4" /> Download E-Book
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </TabsContent>
+              <TabsContent value="templates" className="mt-6">
+                <div className="grid gap-6 md:grid-cols-2">
+                  <Card className="bg-background hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col space-y-2">
+                        <h3 className="text-xl font-bold">SMS Notification Templates</h3>
+                        <p className="text-muted-foreground">
+                          Ready-to-use templates for common school notifications and announcements.
+                        </p>
+                        <div className="pt-4">
+                          <Button variant="outline" className="gap-1">
+                            <Download className="h-4 w-4" /> Download Templates
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                  <Card className="bg-background hover:shadow-lg transition-shadow">
+                    <CardContent className="p-6">
+                      <div className="flex flex-col space-y-2">
+                        <h3 className="text-xl font-bold">Report Card Templates</h3>
+                        <p className="text-muted-foreground">
+                          Customizable report card templates for different grade levels and educational systems.
+                        </p>
+                        <div className="pt-4">
+                          <Button variant="outline" className="gap-1">
+                            <Download className="h-4 w-4" /> Download Templates
+                          </Button>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </TabsContent>
+            </Tabs>
+
+            <div className="flex justify-center mt-8">
+              <Link href="/resources">
+                <Button className="gap-1">
+                  Browse All Resources <ChevronRight className="h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="w-full py-12 md:py-24 flex justify-center lg:py-32 bg-primary text-primary-foreground">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Ready to Transform Your School Management?
+                </h2>
+                <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Join thousands of educational institutions worldwide who trust SchoolMS to streamline their
+                  administrative processes.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link href="#">
+                  <Button size="lg" variant="secondary" className="gap-1">
+                    View Pricing Plans
+                  </Button>
+                </Link>
+                <Link href="#">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                  >
+                    Schedule a Demo
+                  </Button>
+                </Link>
+              </div>
+              <p className="text-sm opacity-80">No credit card required. Start your 14-day free trial today.</p>
             </div>
           </div>
         </section>
