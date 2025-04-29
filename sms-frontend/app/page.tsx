@@ -402,7 +402,7 @@ export default function Home() {
                         className="h-10 w-10 rounded-full mr-2"
                       />
                       <div>
-                        <p className="font-medium">Hajdin Gashi</p>
+                        <p className="font-medium">Blendi Buqani</p>
                         <p className="text-sm text-muted-foreground">Principal, KEKA-MED</p>
                       </div>
                     </div>
