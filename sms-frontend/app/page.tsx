@@ -69,7 +69,7 @@ export default function Home() {
           </nav>
 
           <div className="hidden md:flex items-center gap-2">
-            <Link href="#">
+            <Link href="/login">
               <Button variant="outline">Log In</Button>
             </Link>
             <Link href="#">
@@ -116,7 +116,7 @@ export default function Home() {
                 </Link>
               </nav>
               <div className="flex flex-col space-y-2">
-                <Link href="#">
+                <Link href="/login">
                   <Button variant="outline" className="w-full">
                     Log In
                   </Button>
