@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
@@ -9,21 +8,35 @@ import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle }
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { School } from "lucide-react"
+import axios from 'axios'
 
 export default function LoginPage() {
   const [email, setEmail] = useState("")
   const [password, setPassword] = useState("")
   const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsLoading(true)
+    setError(null)
 
-    // Simulate login process
-    setTimeout(() => {
-      setIsLoading(false)
+    try {
+      const response = await axios.post("http://localhost:4012/api/auth", {  
+        email,
+        password,
+      }, { 
+        headers: { 'Content-Type': 'application/json' } 
+      })
+
+      localStorage.setItem("authToken", response.data.token)
+
       window.location.href = "/dashboard"
-    }, 1500)
+    } catch (err) {
+      setError("Login failed. Please check your credentials.")
+    } finally {
+      setIsLoading(false)
+    }
   }
 
   return (
@@ -77,8 +90,8 @@ export default function LoginPage() {
             </div>
           </CardFooter>
         </form>
+        {error && <div className="text-red-500 text-center mt-2">{error}</div>}
       </Card>
     </div>
   )
 }
-
