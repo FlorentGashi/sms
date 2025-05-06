@@ -514,13 +514,13 @@ export default function ResourcesPage() {
             © 2025 SchoolMS. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <Link href="/terms" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
+            <Link href="#" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
               Terms
             </Link>
-            <Link href="/privacy" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
+            <Link href="#" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
               Privacy
             </Link>
-            <Link href="/cookies" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
+            <Link href="#" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
               Cookies
             </Link>
           </div>
