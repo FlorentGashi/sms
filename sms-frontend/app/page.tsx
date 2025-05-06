@@ -54,7 +54,7 @@ export default function Home() {
             <Link href="/" className="text-sm font-medium text-primary">
               Home
             </Link>
-            <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">
+            <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-primary">
               About
             </Link>
             <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">
@@ -87,7 +87,7 @@ export default function Home() {
                   Home
                 </Link>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-sm font-medium text-muted-foreground"
                   onClick={() => setMobileMenuOpen(false)}
                 >
