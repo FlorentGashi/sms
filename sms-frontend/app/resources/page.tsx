@@ -1,19 +1,13 @@
-"use client"
-
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Input } from "@/components/ui/input"
-import { Download, Search, BookOpen, FileText, Video, Calendar, School, X, Menu } from "lucide-react"
-import { useState } from "react"
+import { Download, Search, BookOpen, FileText, Video, Calendar } from "lucide-react"
 
 export default function ResourcesPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <div className="flex min-h-screen flex-col">
       <main className="flex-1">
-
         {/* Hero Section */}
         <section className="w-full flex py-12 items-center md:py-24 justify-center bg-muted">
           <div className="container px-4 md:px-6">

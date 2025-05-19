@@ -1,110 +1,13 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { School, X, Menu, CheckCircle, ArrowRight, Users, Trophy, Target, Heart, Eye } from "lucide-react"
+import { CheckCircle, ArrowRight, Users, Trophy, Target, Heart, Eye } from "lucide-react"
 
 export default function AboutPage() {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
     return (
         <div className="flex min-h-screen flex-col">
-            {/* Header */}
-            <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-                <div className="w-full flex items-center justify-between px-4 h-16">
-                <div className="flex items-center gap-2">
-                    <School className="h-6 w-6 text-primary" />
-                    <span className="text-xl font-bold">SMS</span>
-                </div>
-
-                {/* Mobile menu button */}
-                <button className="block md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-                    {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-                </button>
-
-                {/* Desktop navigation */}
-                <nav className="hidden md:flex items-center gap-6">
-                    <Link href="/" className="text-sm font-medium text-primary">
-                    Home
-                    </Link>
-                    <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                    About
-                    </Link>
-                    <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                    Features
-                    </Link>
-                    <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                    Resources
-                    </Link>
-                    <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">
-                    Contact
-                    </Link>
-                </nav>
-
-                <div className="hidden md:flex items-center gap-2">
-                    <Link href="/login">
-                    <Button variant="outline">Log In</Button>
-                    </Link>
-                    <Link href="#">
-                    <Button>Get Started</Button>
-                    </Link>
-                </div>
-                </div>
-
-                {/* Mobile menu */}
-                {mobileMenuOpen && (
-                <div className="md:hidden border-t bg-background">
-                    <div className="container py-4 space-y-4">
-                    <nav className="flex flex-col space-y-4">
-                        <Link href="/" className="text-sm font-medium text-primary" onClick={() => setMobileMenuOpen(false)}>
-                        Home
-                        </Link>
-                        <Link
-                        href="#"
-                        className="text-sm font-medium text-muted-foreground"
-                        onClick={() => setMobileMenuOpen(false)}
-                        >
-                        About
-                        </Link>
-                        <Link
-                        href="#"
-                        className="text-sm font-medium text-muted-foreground"
-                        onClick={() => setMobileMenuOpen(false)}
-                        >
-                        Features
-                        </Link>
-                        <Link
-                        href="#"
-                        className="text-sm font-medium text-muted-foreground"
-                        onClick={() => setMobileMenuOpen(false)}
-                        >
-                        Resources
-                        </Link>
-                        <Link
-                        href="#"
-                        className="text-sm font-medium text-muted-foreground"
-                        onClick={() => setMobileMenuOpen(false)}
-                        >
-                        Contact
-                        </Link>
-                    </nav>
-                    <div className="flex flex-col space-y-2">
-                        <Link href="/login">
-                        <Button variant="outline" className="w-full">
-                            Log In
-                        </Button>
-                        </Link>
-                        <Link href="#">
-                        <Button className="w-full">Get Started</Button>
-                        </Link>
-                    </div>
-                    </div>
-                </div>
-                )}
-            </header>
-
             {/* Hero Section */}
             <section className="w-full flex py-12 items-center md:py-24 justify-center bg-muted">
                 <div className="container px-4 md:px-6">
@@ -372,23 +275,6 @@ export default function AboutPage() {
                 </div>
             </div>
             </section>
-
-            {/* Footer */}
-            <footer className="border-t py-6 md:py-0 justify-center flex">
-                <div className="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
-                <p className="text-center text-sm leading-loose text-muted-foreground md:text-left">
-                    © 2025 SMS. All rights reserved.
-                </p>
-                <div className="flex items-center gap-4">
-                    <Link href="#" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
-                    Terms
-                    </Link>
-                    <Link href="#" className="text-sm text-muted-foreground underline-offset-4 hover:underline">
-                    Privacy
-                    </Link>
-                </div>
-                </div>
-            </footer>
         </div>
     )
 }
