@@ -5,6 +5,7 @@ sms-backend/node_modules/
 # Environment variables
 .env
 .env.local
+.DS_Store
 
 # Build files
 build/
