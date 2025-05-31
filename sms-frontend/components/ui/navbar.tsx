@@ -23,7 +23,7 @@ export default function Navbar() {
         <nav className="hidden md:flex items-center gap-6">
           <Link href="/" className="text-sm font-medium text-primary">Home</Link>
           <Link href="/about" className="text-sm font-medium text-muted-foreground hover:text-primary">About</Link>
-          <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">Features</Link>
+          <Link href="/features" className="text-sm font-medium text-muted-foreground hover:text-primary">Features</Link>
           <Link href="/resources" className="text-sm font-medium text-muted-foreground hover:text-primary">Resources</Link>
           <Link href="#" className="text-sm font-medium text-muted-foreground hover:text-primary">Contact</Link>
         </nav>
@@ -39,7 +39,7 @@ export default function Navbar() {
             <nav className="flex flex-col space-y-4">
               <Link href="/" className="text-sm font-medium text-primary" onClick={() => setMobileMenuOpen(false)}>Home</Link>
               <Link href="/about" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileMenuOpen(false)}>About</Link>
-              <Link href="#" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileMenuOpen(false)}>Features</Link>
+              <Link href="/features" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileMenuOpen(false)}>Features</Link>
               <Link href="/resources" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileMenuOpen(false)}>Resources</Link>
               <Link href="#" className="text-sm font-medium text-muted-foreground" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
             </nav>

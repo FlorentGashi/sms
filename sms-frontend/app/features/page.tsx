@@ -17,7 +17,7 @@ import {
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from 
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
 
 // Features data
@@ -225,21 +225,39 @@ export default function FeaturesPage() {
           </div>
         </div>
 
-        <div className="bg-gray-50 p-8 rounded-lg text-center border border-gray-200">
-          <h2 className="text-2xl font-bold mb-4 text-gray-900">Ready to transform your school management?</h2>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Join thousands of educational institutions that have streamlined their operations with our comprehensive
-            school management system.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Button size="lg" asChild>
-              <Link href="/contact">Contact Sales</Link>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <Link href="/demo">Request Demo</Link>
-            </Button>
+        {/* CTA Section */}
+        <section className="w-full py-12 md:py-24 flex justify-center lg:py-32 bg-primary rounded-2xl text-primary-foreground">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                  Ready to Transform Your School Management?
+                </h2>
+                <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Join thousands of educational institutions worldwide who trust SchoolMS to streamline their
+                  administrative processes.
+                </p>
+              </div>
+              <div className="flex flex-col gap-2 min-[400px]:flex-row">
+                <Link href="#">
+                  <Button size="lg" variant="secondary" className="gap-1">
+                    View Pricing Plans
+                  </Button>
+                </Link>
+                <Link href="#">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10"
+                  >
+                    Schedule a Demo
+                  </Button>
+                </Link>
+              </div>
+              <p className="text-sm opacity-80">No credit card required. Start your 14-day free trial today.</p>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </div>
   )
